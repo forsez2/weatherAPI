@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.js">
+    <title>API</title>
+    <style>
+        
+        body {
+            color: rgb(12, 9, 67);
+            background-color: rgba(8, 4, 58, 0.645);
+        }
+        
+        .wrapper {
+            margin-top: 50px;
+        }
+        
+        .weather {
+            max-width: 560px;
+            border: 2px solid palevioletred;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            padding: 15px;
+            margin: 0 auto;
+            box-shadow: 0px 0px 45px 3px rgba(255, 80, 173, 0.66);
+        }
+        
+        /* Start loader */
+        .weather__loading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 50px;
+        }
+        
+        
+        /* End loader */
+        
+        
+        .weather__header {
+            display: flex;
+        }
+        
+        .weather__main {
+            flex: 1 1 auto;
+        }
+        
+        .weather__city {
+            font-size: 35px;
+            font-weight: 700px;
+            margin-bottom: 10px;
+        }
+        
+        .weather__status {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .weather__body {
+            
+        }
+        
+        .weather__icon {
+            align-self: flex-end;
+        }
+        
+        .weather__temp {
+            font-size: 25px;
+            font-weight: 70px;
+            margin-bottom: 10px;
+        }
+        
+        .weather__fell-like{
+            
+        }
+        
+        .weather__temp::after,
+        .weather__fell-like::after {
+            display: inline-block;
+            margin-left: 5px;
+            content: '˚C';
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="weather" class="weather">
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
